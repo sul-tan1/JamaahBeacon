@@ -7,7 +7,7 @@ Discord community. Select a prayer and a wait time, then press the onboard
 button to announce that a congregation is forming. Students can RSVP with a
 green check reaction, while the device shows the countdown and joining count.
 
-Built by **Emron Arsala** as a solo project, Jama'ah Beacon placed **2nd overall
+Built by me as a solo project, Jama'ah Beacon placed **2nd overall
 at the MTC x Replit x Manara West Buildathon** and is used by students at the
 UC San Diego prayer space.
 
