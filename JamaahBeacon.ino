@@ -48,17 +48,29 @@
 // ---------------- Edit these settings locally ----------------
 constexpr bool DRY_RUN = false;        // false enables real Discord announcements
 constexpr bool FAST_DRY_RUN = false;   // ignored when DRY_RUN is false
+
+// REQUIRED: enter the wifi name and password here
 const char* WIFI_SSID = "UCSD-GUEST";
 const char* WIFI_PASSWORD = ""; // "" for an open network
-// Use a plain webhook URL with NO query string or trailing slash.
+
+// REQUIRED: Create your own Discord webhook and paste its full URL below.
+// Do not include a query string or trailing slash.
+// Publish only this placeholder, NEVER your actual webhook URL.
 const char* DISCORD_WEBHOOK =
+  "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN";
+
+// REQUIRED: Create your own Discord bot and paste its BOT TOKEN below.
+// Use the bot token, not the application ID or client secret.
+// Do NOT include the "Bot " prefix; the sketch adds it automatically.
+// Publish only this placeholder, NEVER your actual bot token.
+const char* DISCORD_BOT_TOKEN = "YOUR_DISCORD_BOT_TOKEN";
 const char* LOCATION_NAME = "UCSD Contemplation Lounge";
 
-// UCSD / San Diego; ISNA method, Hanafi Asr, Pacific time with DST.
+// UCSD / San Diego; ISNA method, Maliki/Shafi/Hanbali Asr, Pacific time with DST.
 constexpr double LATITUDE = 32.8810;
 constexpr double LONGITUDE = -117.2340;
 constexpr int CALCULATION_METHOD = 2;
-constexpr int ASR_SCHOOL = 0;
+constexpr int ASR_SCHOOL = 0; //CHANGE TO 1 FOR HANAFI
 const char* TIMEZONE = "PST8PDT,M3.2.0,M11.1.0";
 const char* API_TIMEZONE = "America/Los_Angeles";
 const char* API_TIMEZONE_ENCODED = "America%2FLos_Angeles";
